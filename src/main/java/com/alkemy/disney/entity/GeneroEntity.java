@@ -5,14 +5,13 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "genero")
+@Table(name ="genero")
 @Data
 public class GeneroEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
     private String imagen;
     private String denominacion;
 }
